@@ -1,16 +1,8 @@
 package oop_00000078662_efri.week01
 
 fun main(){
-    val name: String = "John Thor"
-    val score: Int = 80
+    var name: String = "John Thor"
+    var score: Int = 80
 
-    println("Nama: $name, Nilai: $score")
-
-    val grade = when (score){
-        in 90 <= .. <= 100 -> "A"
-        in 80 <= .. <= 89 -> "B"
-        in 70 <= .. 79 -> "C"
-    }
-
-    println("Grade kamu: $grade")
+    println("Nama: " + name + "Nilai: " + score)
 }
