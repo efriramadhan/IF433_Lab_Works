@@ -3,7 +3,8 @@ package oop_00000078662_efri.week02
 class Student (
     val name : String,
     val nim : String,
-    val major : String,
+    var gpa: Double = 0.0,
+    var major : String
 ){
     init {
         if (nim.length != 5){
