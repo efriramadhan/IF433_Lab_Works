@@ -1,4 +1,4 @@
-package oop_00000078662_efri.week02
+package oop_00000078662_efri.week02.tugas1
 
 class Loan(
     val bookTitle: String,
