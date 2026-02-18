@@ -1,4 +1,4 @@
-package oop_00000078662_efri.week03.tugas2
+package oop_00000078662_efri.week03.tugas1
 
 class Player(
     val username: String
