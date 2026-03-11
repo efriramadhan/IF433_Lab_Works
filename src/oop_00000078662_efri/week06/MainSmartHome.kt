@@ -10,4 +10,15 @@ fun MainSmartHome(){
     hub.addDevice(lamp)
     hub.addDevice(speaker)
     hub.addDevice(cctv)
+
+    println("\n=== Menyalakan Perangkat ===")
+    lamp.turnOn()
+    speaker.turnOn()
+    cctv.turnOn()
+
+    println("\n=== Mode Keamanan Aktif ===")
+    hub.activateSecurityMode()
+
+    println("\n=== Mematikan Semua Perangkat ===")
+    hub.turnOffAllSwitches()
 }
