@@ -18,4 +18,12 @@ fun main() {
 
     val result = processData("Stable Coin")
     println("Hasil proses: $result")
+
+    println("\n=== TEST TYPE CONSTRAINT ===")
+    val mathBox = MathBox(10, 20)
+    println("Hasil penjumlahan: ${mathBox.sum()}")
+
+    val numbers = listOf(1, 5, 10, 15)
+    val filtered = copyWhenGreater(numbers, 5)
+    println("Angka > 5: $filtered")
 }
