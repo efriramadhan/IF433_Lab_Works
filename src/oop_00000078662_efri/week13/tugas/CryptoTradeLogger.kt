@@ -33,3 +33,13 @@ fun saveTrades(trades: List<TradeRecord>, path: String) {
         trades.forEach { writer.println(it.toCsv()) }
     }
 }
+
+fun loadTrades(path: String): List<TradeRecord> {
+    return try {
+        // mapNotNull otomatis membuang hasil yang bernilai null (baris korup)
+        File(path).readLines().mapNotNull { fromCsvTrade(it) }
+    } catch (e: FileNotFoundException) {
+        println("Error: File tidak ditemukan!")
+        emptyList()
+    }
+}
